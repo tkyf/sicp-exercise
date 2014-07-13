@@ -48,9 +48,5 @@ class Sqrt{
         return x.add(y).divide(new BigDecimal(2));
     }
 
-    private static BigDecimal square(BigDecimal x, BigDecimal y) {
-        return x.multiply(y);        
-    }
-
 }
 
