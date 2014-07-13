@@ -10,9 +10,9 @@ public class SqrtTest {
         }
         BigDecimal x = new BigDecimal(args[0]);
 
-        BigDecimal route = Sqrt.sqrt(x);
+        BigDecimal root = Sqrt.sqrt(x);
 
-        System.out.println(route);
+        System.out.println(root);
 
     }
 
