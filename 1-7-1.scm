@@ -30,7 +30,7 @@
     (display "enough?: ")                   ; 途中経過
       (print (abs (- (square guess) x))) ; 途中経過
         (display "\n")                     ; 途中経過
-          (< (abs (- (square guess) x)) 000.1)
+          (< (abs (- (square guess) x)) 0.001)
             )
 
 (define (sqrt2 x)
