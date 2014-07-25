@@ -13,7 +13,7 @@
             b
                   (inc (add (dec a) b))))
 
-; (+ 4 5)の場合、再帰的プロセス
+; 再帰的プロセス
 (add 4 5)
 (inc (add (dec 4) 5))
 (inc (add 3 5))
