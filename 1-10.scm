@@ -15,7 +15,7 @@
 ;65536
 
 (define (f n) (A 0 n))
-; (f n) computes f ^ 2
+; (f n) computes f * 2
 
 (define (g n) (A 1 n))
 
