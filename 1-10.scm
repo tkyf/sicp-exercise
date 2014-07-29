@@ -18,7 +18,7 @@
 ; (f n) computes f * 2
 
 (define (g n) (A 1 n))
-; (g n) computes f ^ 2
+; (g n) computes 2 ^ n
 
 (define (h n) (A 2 n))
 
