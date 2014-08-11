@@ -12,24 +12,22 @@
             (+ (pascal (- n 1) (- k 1))
                 (pascal (- n 1) k)))))
 
-(display (pascal 1 1))
-(display "\n")
-(display (pascal 2 1))
-(display (pascal 2 2))
-(display "\n")
-(display (pascal 3 1))
-(display (pascal 3 2))
-(display (pascal 3 3))
-(display "\n")
-(display (pascal 4 1))
-(display (pascal 4 2))
-(display (pascal 4 3))
-(display (pascal 4 4))
-(display "\n")
-(display (pascal 5 1))
-(display (pascal 5 2))
-(display (pascal 5 3))
-(display (pascal 5 4))
-(display (pascal 5 5))
-; これ絶対短く書けるやつ
+; テスト
+(define (pascal-test n)
+        (pascal-test-iter 1 1 n))
+
+(define (pascal-test-iter row column n)
+    (if (< n row)
+            ""
+            (cond ((= row column)
+                    (display (pascal row column))
+                    (display "\n")
+                    (pascal-test-iter (+ row 1) 1 n))
+                   (else
+                    (display (pascal row column))
+                    (pascal-test-iter row (+ column 1) n)))))
+
+(pascal-test 5)
+
+
 
